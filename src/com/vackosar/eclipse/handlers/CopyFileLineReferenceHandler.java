@@ -25,7 +25,7 @@ public class CopyFileLineReferenceHandler extends AbstractHandler {
 	}
 
 	private int getSelectionStartLine(IEditorPart activeEditor) {
-		ISelection selection = activeEditor.getSite().getSelectionProvider().getSelection();
+		ISelection selection = activeEditor.getEditorSite().getSelectionProvider().getSelection();
 		if (selection instanceof TextSelection) {
 			TextSelection ts = (TextSelection) selection;
 			return ts.getStartLine();
