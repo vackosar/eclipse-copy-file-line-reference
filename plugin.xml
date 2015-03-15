@@ -6,25 +6,25 @@
          point="org.eclipse.ui.commands">
       <category
             name="CopyFileLineReferencePlugin Category"
-            id="CopyFileLineReferencePlugin.commands.category">
+            id="com.vackosar.eclipse.CopyFileLineReferencePlugin.commands.category">
       </category>
       <command
             name="CopyFileLineReference"
-            categoryId="CopyFileLineReferencePlugin.commands.category"
-            id="CopyFileLineReferencePlugin.commands.copyFileLineReference">
+            categoryId="com.vackosar.eclipse.CopyFileLineReferencePlugin.commands.category"
+            id="com.vackosar.eclipse.CopyFileLineReferencePlugin.commands.copyFileLineReference">
       </command>
    </extension>
    <extension
          point="org.eclipse.ui.handlers">
       <handler
-            commandId="CopyFileLineReferencePlugin.commands.copyFileLineReference"
+            commandId="com.vackosar.eclipse.CopyFileLineReferencePlugin.commands.copyFileLineReference"
             class="com.vackosar.eclipse.handlers.CopyFileLineReferenceHandler">
       </handler>
    </extension>
    <extension
          point="org.eclipse.ui.bindings">
       <key
-            commandId="CopyFileLineReferencePlugin.commands.copyFileLineReference"
+            commandId="com.vackosar.eclipse.CopyFileLineReferencePlugin.commands.copyFileLineReference"
             contextId="org.eclipse.ui.contexts.window"
             sequence="M3+L"
             schemeId="org.eclipse.ui.defaultAcceleratorConfiguration">
