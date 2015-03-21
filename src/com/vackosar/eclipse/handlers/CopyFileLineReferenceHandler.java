@@ -51,9 +51,7 @@ public class CopyFileLineReferenceHandler extends AbstractHandler {
 		return new Object[]{ getContent(file, startLine)};
 	}
 
-	private static final int FIRST_LINE_LINE_NUMBER = 1;
-
 	private String getContent(String file, int startLine) {
-		return "(" + file + ":" + startLine + FIRST_LINE_LINE_NUMBER + ")";
+		return "(" + file + ":" + startLine + ")";
 	}
 }
